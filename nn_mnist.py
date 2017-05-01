@@ -86,7 +86,7 @@ while 1:
     error = sess.run(loss, feed_dict={x: valid_x, y_: valid_y})
     errorHistory.append(error)
 
-    print ("Epoch #:", epoch, "Error: ", error)
+    print "Epoch #:", epoch, "Error: ", error
 
     if abs(error - lastError) < bound:
         break
